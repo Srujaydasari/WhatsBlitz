@@ -28,11 +28,5 @@ WhatsBlitz is a Chrome Extension for automated, personalized WhatsApp message de
 - Duplicate tab creation may occur on slow systems
 - Cancellation may delay due to WhatsApp loading time
 
-## 📹 Demo Video
-[Insert demo video link here once uploaded]
 
-## 📂 Deliverables
-- ✅ Chrome Extension (code)
-- ✅ GitHub Repo
-- ⏳ Demo Video (Pending)
-- 📝 Optional PDF / Flow Diagram (Optional)
+
