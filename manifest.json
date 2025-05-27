@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Bulk Messenger",
+    "version": "1.0",
+    "description": "Send WhatsApp messages from CSV file",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+      "https://web.whatsapp.com/*"
+    ],
+    "icons": {
+      "16": "icon12.png",
+      "32": "icon12.png",
+      "48": "icon12.png",
+      "128": "icon12.png"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icon12.png",
+        "32": "icon12.png",
+        "48": "icon12.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "WhatsApp Bulk Messenger"
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
